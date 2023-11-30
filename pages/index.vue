@@ -1,15 +1,15 @@
 <template>
   <main>
-    <h1>Task Board</h1>
-    <p>Create a list of tasks</p>
+    <h1>To Do List</h1>
+    <p>Organize your life and complete tasks more reliably</p>
 
     <div class="create-new">
       <input 
         type="text" 
         v-model="newTask" 
-        placeholder="Add a new task" 
+        placeholder="what do we do today?" 
         @keypress.enter="addTask" />
-      <button @click="addTask">Add</button>
+      <button @click="addTask">ADD</button>
     </div>
 
     <div class="tasks">
